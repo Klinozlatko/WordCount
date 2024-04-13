@@ -24,11 +24,18 @@ st.write("#### Weather forecast - počasie")
 st.write(""" 
 Cygeneruje vám počasie na február a marec.
 """)
-
+if st.button("Weather forecast" , key=15641165):
+    # Redirect to "/grafy" when the button is clicked
+    st.markdown('<meta http-equiv="refresh" content="0; URL=/weather_forecast" />', unsafe_allow_html=True)
+    
 st.write("#### Text zo stránok - text extract")
 st.write(""" 
 Extrahuje text z url , ktoré sa nachádzajú v txt súbore.
 """)
+if st.button("Text zo stránok", key=4445):
+    # Redirect to "/grafy" when the button is clicked
+    st.markdown('<meta http-equiv="refresh" content="0; URL=/text_extract" />', unsafe_allow_html=True)
+    
 st.write("#### 1. Úloha - word counter")
 st.write(""" 
 Zo súboru Noviny  
@@ -37,6 +44,9 @@ Zo súboru Noviny
 3.vypočítajte základné štatistické charakteristiky
 """)
 st.write("<p style='color:red'>V bode č.1 nepoužijeme len 3 strany ale celý náš kontent</p>", unsafe_allow_html=True)
+if st.button("1. Úloha - word counter", key=98753):
+    
+    st.markdown('<meta http-equiv="refresh" content="0; URL=/word_counter" />', unsafe_allow_html=True)
 st.write("#### 2. Úloha - crypto_funny_staff")
 st.write("""
 Zo súboru Komodity  
@@ -47,6 +57,9 @@ Zo súboru Komodity
 početností intervalov hodnôt pre každú komoditu
 """)
 st.write("<p style='color:red'>Bod č.4 je nejaká blbosť , to sa robiť nebude</p>", unsafe_allow_html=True)
+if st.button("2. Úloha - crypto_funny_staff",key=987537):
+    
+    st.markdown('<meta http-equiv="refresh" content="0; URL=/crypto_funny_staff" />', unsafe_allow_html=True)
 st.write("#### 3. Úloha - Correlation matrix")
 st.write("""
 1.Vytvorte graf zmeny počtu hľadaných slov podľa času  
@@ -58,3 +71,6 @@ st.write("""
 st.write("<p style='color:red'>Bod č.2 sme slpnili v crypto_funny_staff</p>", unsafe_allow_html=True)
 st.write("<p style='color:red'>Bod č.3 nedáva zmysel</p>", unsafe_allow_html=True)
 st.write("<p style='color:red'>Bod č.5 si sami vyznačíte v korelačnej matici v Exceli(najvačšia hodnota)</p>", unsafe_allow_html=True)
+if st.button("3. Úloha - Correlation matrix",key=98753487933):
+    
+    st.markdown('<meta http-equiv="refresh" content="0; URL=/korelacia" />', unsafe_allow_html=True)
